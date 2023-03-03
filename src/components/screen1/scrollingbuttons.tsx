@@ -19,7 +19,7 @@ export function ScrollingBnts() {
             <div>
                 <ul>
                     {btns.map(btn => (
-                        <li>
+                        <li key={btn.coin_id}>
                             <Link href={`/trade/${btn.coin_id}`}>
                                 <a>
                                     <Image 
