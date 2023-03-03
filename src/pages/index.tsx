@@ -14,8 +14,10 @@ export default function Home() {
       </Head>
       <main >
        <BalanceHeader />
-       <ScrollingBnts />
-       <NftCards data={nft_data} />
+       <ul>
+          <ScrollingBnts />
+          <NftCards data={nft_data} />
+       </ul>
       </main>
     </>
   )

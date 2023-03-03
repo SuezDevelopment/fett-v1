@@ -16,6 +16,16 @@
     background-color: white;
     border-radius: 20px;
   }
+
+  ul {
+    height: calc(100vh - 60px);
+    overflow: scroll;
+
+    height: -o-calc(100vh - 60px);
+    height: -webkit-calc(100vh - 60px);
+    height: -moz-calc(100vh - 60px);
+
+  }
   
   .scroll_x{
     align-items: center;
@@ -24,7 +34,7 @@
 
   .nft_cards{
     margin-bottom: 10px;
-    animation: fadeInFromBelow ease-in-out 1.25s 1 forwards;
+    animation: fadeInFromBelow ease-in-out 2.25s 1 forwards;
     cursor: pointer;
   }
   
@@ -64,7 +74,7 @@
 @keyframes fadeInFromBelow {
   from {
     opacity: 0;
-    transform: translate3d(0, 110px, 0);
+    transform: translate3d(0, 1100px, 0);
   }
   to {
     opacity: 1;
