@@ -3,6 +3,7 @@ import { BalanceHeader } from '@/components/screen1/balanceheader'
 import { ScrollingBnts } from '@/components/screen1/scrollingbuttons'
 import { NftCards } from '@/components/screen1/nftcards'
 import { nft_data } from './api/nft_data'
+import { crypto_data } from './api/crypto_data'
 export default function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ export default function Home() {
       </Head>
       <main >
         <BalanceHeader />
-        <ScrollingBnts />
+        <ScrollingBnts data={crypto_data} />
         <NftCards data={nft_data} />
       </main>
     </>
