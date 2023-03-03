@@ -23,16 +23,9 @@
   }
 
   .nft_cards{
-    opacity: 0;
     margin-bottom: 10px;
-    transform: translate3d(0, 20px, 0);
+    animation: fadeInFromBelow ease-in-out 0.25s 1 forwards;
     cursor: pointer;
-    transition: 0.25s all ease-in-out;
-  }
-
-  .nft_cards:focus{
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
   
   .nft_card{
@@ -71,7 +64,7 @@
 @keyframes fadeInFromBelow {
   from {
     opacity: 0;
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, 20px, 0);
   }
   to {
     opacity: 1;
