@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
+
 interface NftCardProps {
     data: {
       id: number;
@@ -13,13 +14,13 @@ export const  NftCards: React.FC<NftCardProps>  = ({data}) => {
     return(
         <>
             {data.map(nft_card => (
-                <div key={nft_card.id}>
-                    <Link href={`/bid/${nft_card.id}`}>
-                        <div className={styles.nft_cards}>
+                <div className={styles.nft_cards} key={nft_card.id}>
+                    <Link href={`/bid?nft=${nft_card.id}`}>
+                        <div className={styles.nft_card}>
                     
                         </div>
                     </Link>
-                    <div className={styles.nft_cards_bottom}>
+                    <div className={styles.nft_card_bottom}>
                         <div>
                             <h1>{`ETH ${nft_card.bid_price}`}</h1>
                         </div>

@@ -21,8 +21,12 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .nft_cards{
+    margin-bottom: 10px;
+  }
+  
+  .nft_card{
     width: 98%;
     height: 400px;
     margin-left: auto;
@@ -30,7 +34,7 @@
     background-color: red;
     border-radius: 30px 30px 10px 10px;
   }
-  .nft_cards_bottom{
+  .nft_card_bottom{
     width: 98%;
     height: 100px;
     margin-top: 2px;
