@@ -1,19 +1,35 @@
+import React, { useEffect, useRef } from 'react';
 import styles from '@/styles/Home.module.css'
-
-export function NftCards() {
+import Link from 'next/link';
+interface NftCardProps {
+    data: {
+      id: number;
+      nft_image: string;
+      bid_price: number;
+      bid_countdown: string;
+    }[];
+}
+export const  NftCards: React.FC<NftCardProps>  = ({data}) => {
     return(
         <>
-            <div className={styles.nft_cards}>
-                
-            </div>
-            <div className={styles.nft_cards_bottom}>
-                <div>
-                    <h1>ETH 0.40</h1>
+            {data.map(nft_card => (
+                <div key={nft_card.id}>
+                    <Link href={`/bid/${nft_card.id}`}>
+                        <div className={styles.nft_cards}>
+                    
+                        </div>
+                    </Link>
+                    <div className={styles.nft_cards_bottom}>
+                        <div>
+                            <h1>{`ETH ${nft_card.bid_price}`}</h1>
+                        </div>
+                        <div>
+                            <h2>{nft_card.bid_countdown}</h2>
+                        </div>
+                    </div>
+
                 </div>
-                <div>
-                    <h2>07:24:35</h2>
-                </div>
-            </div>
+            ))}
         </>
     )
 }
