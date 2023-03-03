@@ -1,0 +1,53 @@
+@media (max-width: 700px) {
+    .trade_header{
+        top: 30px;
+        display: inline-flex;
+        padding: 30px;
+    }
+    .go_back{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #575454;
+    }
+
+    .header_title{
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .price_tag{
+        display: flex;
+        align-items:baseline;
+        padding: 30px;
+    }
+
+
+
+    .sell_buy_btns{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        padding: 2px;
+        justify-content: space-between;
+        
+    }
+    .sell_btn{
+        background-color:#5957BA;
+        width: 49.8%;
+        border-radius: 20px;
+        text-align: center;
+        padding: 25px;
+
+    }
+
+    .buy_btn{
+        background-color:#B9E39A;
+        width: 49.8%;
+        border-radius: 20px;
+        text-align: center;
+        padding: 25px;
+    }
+}

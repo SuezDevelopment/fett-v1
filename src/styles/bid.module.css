@@ -1,0 +1,64 @@
+@media (max-width: 700px) {
+    .nft_card_header{
+        width: 99%;
+        background-color: brown;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        border-radius: 50px;
+    }
+
+    .nft_card_title{
+        padding: 30px;
+    }
+
+    .nft_creator{
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .col1{
+
+    }
+    .add_btn_col2{
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    .time_price{
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .time{
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        width: 49.8%;
+        background-color: rgb(83, 81, 81);
+    }
+    .price{
+        text-align: center;
+        padding: 25px;
+        border-radius: 20px;
+        width: 49.8%;
+        background-color: rgb(83, 81, 81);
+    }
+
+    .place_bid_btn{
+        width: 99%;
+        margin-top: 35px;
+        background-color: brown;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
