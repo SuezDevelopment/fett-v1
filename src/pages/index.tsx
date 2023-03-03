@@ -13,11 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-       <BalanceHeader />
-       <ul className="scroll">
-          <ScrollingBnts />
-          <NftCards data={nft_data} />
-       </ul>
+        <BalanceHeader />
+        <ScrollingBnts />
+        <NftCards data={nft_data} />
       </main>
     </>
   )

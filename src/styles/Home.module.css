@@ -5,6 +5,7 @@
     top: 0%;
     padding: 30px;
     align-items: center;
+    width: 100%;
     display: flex;
     position: fixed;
     background: black;
