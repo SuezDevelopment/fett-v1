@@ -7,6 +7,7 @@
     align-items: center;
     display: flex;
     position: fixed;
+    background: black;
     justify-content: space-between;
     z-index: 999999999;
   }
@@ -14,20 +15,13 @@
   .balance_btn{
     width: 70px;
     height: 70px;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+    text-align: center;
+    background: white;
     border-radius: 25px;
   }
 
   ul.scroll {
-    height: calc(100vh - 60px);
     overflow: scroll;
-
-    height: -o-calc(100vh - 60px);
-    height: -webkit-calc(100vh - 60px);
-    height: -moz-calc(100vh - 60px);
-
   }
   
   .scroll_x{
