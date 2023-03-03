@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <main >
        <BalanceHeader />
-       <ul>
+       <ul className="scroll">
           <ScrollingBnts />
           <NftCards data={nft_data} />
        </ul>

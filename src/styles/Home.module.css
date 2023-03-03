@@ -6,18 +6,21 @@
     padding: 30px;
     align-items: center;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     z-index: 999999999;
   }
   
   .balance_btn{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
-  ul {
+  ul.scroll {
     height: calc(100vh - 60px);
     overflow: scroll;
 
@@ -73,8 +76,8 @@
 
 @keyframes fadeInFromBelow {
   from {
-    opacity: 0;
-    transform: translate3d(0, 1100px, 0);
+    opacity: 0.5;
+    transform: translate3d(0, 2100px, 0);
   }
   to {
     opacity: 1;

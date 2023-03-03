@@ -1,4 +1,6 @@
 import styles from '@/styles/Home.module.css'
+import CIcon from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
 
 export function BalanceHeader(){
      return(
@@ -9,9 +11,8 @@ export function BalanceHeader(){
                     <h1>$1234.56</h1>
                 </div>
                 <div className={styles.balance_btn}>
-
+                    <CIcon icon={icon.cilPlus} size="xl"/>
                 </div>
-
             </div>
         </>
      )
