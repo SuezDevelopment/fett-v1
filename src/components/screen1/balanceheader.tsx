@@ -11,7 +11,7 @@ export function BalanceHeader(){
                     <h1>$1234.56</h1>
                 </div>
                 <div className={styles.balance_btn}>
-                    <CIcon icon={icon.cilPlus} size="xl" />
+                    <CIcon icon={icon.cilPlus} size="sm" color='#000' />
                 </div>
             </div>
         </>
