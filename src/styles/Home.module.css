@@ -28,7 +28,7 @@
   .scroll_btns{
     display: flex;
     flex-direction: row;
-    top: 70px;
+    margin-top: 70px;
     margin: 10px;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@
 
   .nft_cards{
     margin-bottom: 10px;
-    animation: fadeInFromBelow ease-in-out 2.25s 1 forwards;
+    animation: fadeInFromBelow ease-in-out 1.55s 1 forwards;
     cursor: pointer;
   }
   
