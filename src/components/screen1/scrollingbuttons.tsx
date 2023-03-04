@@ -38,7 +38,7 @@ export const ScrollingBnts: React.FC<CoinBtns> = ({data}) => {
             <Marquee direction="right" className={styles.scroll_btns}>
                 {secondHalf.map((btn, ndx) => (
                     <div key={ndx} className={styles.crypto_bnt}>
-                        <Link href={`/trade/${btn.coin_id}`}>
+                        <Link href={`/trade?crypto=${btn.coin_id}`}>
                             <a>
                                 <Image 
                                     src={btn.coin_logo}

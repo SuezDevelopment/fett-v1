@@ -38,7 +38,10 @@
 
   .crypto_bnt{
     text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
     background-color: #575454;
   }
 
