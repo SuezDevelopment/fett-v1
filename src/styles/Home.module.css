@@ -29,7 +29,7 @@
     position: absolute;
     display: flex;
     overflow: scroll;
-    flex-direction: row;
+    flex-direction: row; 
     margin-top: 1770px;
     margin: 10px;
     align-items: center;
@@ -39,6 +39,11 @@
   .crypto_bnt{
     text-align: center;
     padding: 20px;
+    background-color: #575454;
+  }
+
+  .crypto_bnt:hover{
+    background-color: #B9E39A;
   }
 
   .nft_cards{
