@@ -6,6 +6,7 @@
     align-items: center;
     width: 100%;
     display: flex;
+    flex-direction: row;
     position: fixed;
     background: black;
     justify-content: space-between;
@@ -27,7 +28,7 @@
   .scroll_btns{
     display: flex;
     flex-direction: row;
-    margin-top: 770px;
+    margin-top: 1770px;
     margin: 10px;
     align-items: center;
     justify-content: center;
