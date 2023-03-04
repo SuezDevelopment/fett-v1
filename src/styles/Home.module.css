@@ -28,6 +28,7 @@
   .scroll_btns{
     position: absolute;
     display: flex;
+    overflow: scroll;
     flex-direction: row;
     margin-top: 1770px;
     margin: 10px;
