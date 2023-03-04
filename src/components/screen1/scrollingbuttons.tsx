@@ -17,22 +17,20 @@ export const ScrollingBnts: React.FC<CoinBtns> = ({data}) => {
     return(
         <>
             <div className={styles.scroll_btns}>
-                <ul>
-                    {data.map((btn, ndx) => (
-                        <li key={btn.coin_id} className={styles.crypto_bnt}>
-                            <Link href={`/trade/${btn.coin_id}`}>
-                                <a>
-                                    <Image 
-                                        src={btn.coin_logo}
-                                        alt={btn.coin_name}
-                                        sizes={`20px`}
-                                    />
-                                    <h5>{btn.coin_name}</h5>
-                                </a>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                {data.map((btn, ndx) => (
+                    <div key={btn.coin_id} className={styles.crypto_bnt}>
+                        <Link href={`/trade/${btn.coin_id}`}>
+                            <a>
+                                <Image 
+                                    src={btn.coin_logo}
+                                    alt={btn.coin_name}
+                                    sizes={`20px`}
+                                />
+                                <h5>{btn.coin_name}</h5>
+                            </a>
+                        </Link>
+                    </div>
+                ))}
             </div>
         </>
     )

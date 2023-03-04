@@ -27,7 +27,7 @@
   
   .scroll_btns{
     display: flex;
-    overflow: scroll;
+    flex-direction: row;
     margin: 10px;
     align-items: center;
     justify-content: center;
