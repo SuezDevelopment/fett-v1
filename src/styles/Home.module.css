@@ -25,9 +25,17 @@
     overflow: scroll;
   }
   
-  .scroll_x{
+  .scroll_btns{
+    display: flex;
+    overflow: scroll;
+    margin: 10px;
     align-items: center;
     justify-content: center;
+  }
+
+  .crypto_bnt{
+    text-align: center;
+    padding: 20px;
   }
 
   .nft_cards{

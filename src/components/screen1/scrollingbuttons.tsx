@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
 import Image from "next/image";
-import Icons from "next/"
+import styles from '@/styles/Home.module.css'
 
 interface CoinBtns {
     data:{
@@ -16,10 +16,10 @@ interface CoinBtns {
 export const ScrollingBnts: React.FC<CoinBtns> = ({data}) => {
     return(
         <>
-            <div>
+            <div className={styles.scroll_btns}>
                 <ul>
                     {data.map((btn, ndx) => (
-                        <li key={btn.coin_id}>
+                        <li key={btn.coin_id} className={styles.crypto_bnt}>
                             <Link href={`/trade/${btn.coin_id}`}>
                                 <a>
                                     <Image 
