@@ -16,7 +16,7 @@ interface CoinBtns {
 export const ScrollingBnts: React.FC<CoinBtns> = ({data}) => {
     return(
         <>
-            <div className={styles.scroll_btns}>
+            <Marquee className={styles.scroll_btns}>
                 {data.map((btn, ndx) => (
                     <div key={btn.coin_id} className={styles.crypto_bnt}>
                         <Link href={`/trade/${btn.coin_id}`}>
@@ -31,7 +31,7 @@ export const ScrollingBnts: React.FC<CoinBtns> = ({data}) => {
                         </Link>
                     </div>
                 ))}
-            </div>
+            </Marquee>
         </>
     )
 }
