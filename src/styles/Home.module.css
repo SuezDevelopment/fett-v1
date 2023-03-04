@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     background: black;
     justify-content: space-between;
     z-index: 999999999;
